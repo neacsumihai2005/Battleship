@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Battleship</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+            <div id="game"></div>
+            <div class="menus-container">
+            <div id="player1menu">
+                <div class="horizontalBoat4 player1" id = "boat0-1" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="0-1">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="0-1">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="0-1">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="0-1">X</div>
+                </div>
+                
+                <div class="horizontalBoat3 player1" id = "boat1-1" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="1-1">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="1-1">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="1-1">X</div>
+                </div>
+                <div class="horizontalBoat3 player1" id = "boat2-1" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="2-1">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="2-1">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="2-1">X</div>
+                </div>
+                <div class="horizontalBoat2 player1" id = "boat3-1" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="3-1">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="3-1">X</div>
+                </div>
+                <div class="horizontalBoat2 player1" id = "boat4-1" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="4-1">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="4-1">X</div>
+                </div>
+                <div class="horizontalBoat2 player1" id = "boat5-1" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="5-1">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="5-1">X</div>
+                </div>
+                <div class="horizontalBoat1 player1" id = "boat6-1" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="6-1">X</div>
+                </div>
+                <div class="horizontalBoat1 player1" id = "boat7-1" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="7-1">X</div>
+                </div>
+                <div class="horizontalBoat1 player1" id = "boat8-1" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="8-1">X</div>
+                </div>
+                <div class="horizontalBoat1 player1" id = "boat9-1" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="9-1">X</div>
+                </div>
+                <button onclick="hideBoats(0)" class="button" id = "readyplayer1">Ready!</button>
+            </div>
+            <div id="player2menu">
+                <div class="horizontalBoat4 player2" id = "boat0-2" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="0-2">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="0-2">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="0-2">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="0-2">X</div>
+                </div>
+                
+                <div class="horizontalBoat3 player2" id = "boat1-2" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="1-2">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="1-2">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="1-2">X</div>
+                </div>
+                <div class="horizontalBoat3 player2" id = "boat2-2" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="2-2">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="2-2">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="2-2">X</div>
+                </div>
+                <div class="horizontalBoat2 player2" id = "boat3-2" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="3-2">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="3-2">X</div>
+                </div>
+                <div class="horizontalBoat2 player2" id = "boat4-2" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="4-2">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="4-2">X</div>
+                </div>
+                <div class="horizontalBoat2 player2" id = "boat5-2" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="5-2">X</div>
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="5-2">X</div>
+                </div>
+                <div class="horizontalBoat1 player2" id = "boat6-2" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="6-2">X</div>
+                </div>
+                <div class="horizontalBoat1 player2" id = "boat7-2" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="7-2">X</div>
+                </div>
+                <div class="horizontalBoat1 player2" id = "boat8-2" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="8-2">X</div>
+                </div>
+                <div class="horizontalBoat1 player2" id = "boat9-2" onclick="toggleOrientation(event)"> 
+                    <div class="boatTile group" style="width:48px; height:48px;" draggable="true" ondragstart="drag(event)" data-group="9-2">X</div>
+                </div>
+                <button onclick="hideBoats(1)" class="button" id = "readyplayer2">Ready!</button>
+            </div>
+        </div>
+        <script src="battleship.js"></script>
+    </body>
+</html>

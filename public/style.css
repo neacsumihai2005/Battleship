@@ -1,0 +1,245 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #425B40;
+}
+
+#player1menu{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+#player2menu{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+#game{
+    background-color:#425B40;
+    box-sizing:content-box;
+    color:white;
+    font-size: xx-large;
+
+    user-select:none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 20px;
+    margin-top: 500px;
+}
+
+.menus-container {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 1000px; 
+    height: 1000px;
+    min-width:700px;
+    min-height:700px;
+}
+
+#arrow{
+    background-color: #425B40;
+    color:white;
+    font-size: xxx-large;
+
+    height: 50px;
+    width: 50px;
+
+    user-select:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.playerboard {
+    background-color: #425B40;
+    box-sizing:content-box;
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.empty{
+    margin: 1px;
+    background-color: rgb(135, 138, 134);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+.empty:hover{
+    background-color:rgb(180, 177, 177)
+}
+
+.empty-destroyed{
+    margin: 1px;
+    background-color: rgb(173, 173, 243);
+    transition: background-color 0.5s ease;
+}
+
+.boat-occupied{
+    margin: 1px;
+    background-color: #48CAC6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    transition: background-color 0.5s ease;
+}
+.boat-vecinity{
+    background-color: rgb(173, 173, 243);
+}
+
+.nonempty-destroyed{
+    margin: 1px;
+    background-color: #48CAC6;
+    color: black;
+    transition: background-color 0.5s ease;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.horizontalBoat1 {
+    border: 3px solid rgb(2, 2, 65);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+}
+.verticalBoat1 {
+    border: 3px solid rgb(2, 2, 65);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.horizontalBoat2 {
+    border: 3px solid rgb(2, 2, 65);
+    width: 100px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+}
+.verticalBoat2 {
+    border: 3px solid rgb(2, 2, 65);
+    height: 100px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.horizontalBoat3 {
+    border: 3px solid rgb(2, 2, 65);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+}
+.verticalBoat3 {
+    border: 3px solid rgb(2, 2, 65);
+    height: 150px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.horizontalBoat4 {
+    border: 3px solid rgb(2, 2, 65);
+    height: 50px;
+    width: 200px;
+    display: flex;
+    cursor: pointer;
+}
+.verticalBoat4 {
+    border: 3px solid rgb(2, 2, 65);
+    height: 200px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.boatTile{
+    background-color: rgb(180, 178, 178);
+    margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    cursor:pointer;
+  }
+
+  /* styles.css */
+
+form {
+    width: 300px;
+    margin: 100px auto; /* Center the form vertically and horizontally */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
