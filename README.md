@@ -3,4 +3,6 @@ Please install the followind dependencies:\
 
 Then do\
 ```node app.js```\
-in the project directory. The app will be hosted on port 5000
+in the project directory\
+
+The app will be hosted on port ```5000```
